@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %> 
+<body id="root">
+    <div class="lavida">
+        <h1 >Bienvenido usuario: <span id="userName"><%=userName%></span> </h1>
+        <h3>Time remaining: <span id="time"></span></h3>
+        <span>This is your visit numero: <%=views %> </span>
+    </div>
+    <div>
+        <form id="logout" method="POST" action="/logOut">
+            <input class="button" type="submit" value="Close session">
+        </form>
+    </div>
+    <%-include("partials/scripts")  %> 
+</body>
+</html>
